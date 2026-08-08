@@ -1,0 +1,304 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #18234a,
+            #070914 70%
+        );
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   GAME CONTAINER
+========================= */
+
+.game-container {
+
+    width: 900px;
+
+    max-width: 95%;
+
+    padding: 20px;
+
+    background:
+        rgba(10, 15, 40, 0.9);
+
+    border: 1px solid #394477;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 50px
+        rgba(70, 100, 255, 0.3);
+}
+
+
+/* =========================
+   TOP AREA
+========================= */
+
+.top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+h1 {
+
+    font-size: 30px;
+
+    color: #6fa8ff;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SCORE
+========================= */
+
+.score-box {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.score {
+
+    background: #151c3d;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #303b72;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CANVAS
+========================= */
+
+canvas {
+
+    width: 100%;
+
+    display: block;
+
+    background: #050713;
+
+    border: 1px solid #28335f;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.bottom {
+
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.hint {
+
+    color: #aeb7db;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #5b7cff;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+
+    background: #7690ff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 20px
+        rgba(91, 124, 255, 0.4);
+}
+
+
+/* =========================
+   OVERLAY
+========================= */
+
+.overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.75);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    width: 400px;
+
+    max-width: 90%;
+
+    text-align: center;
+
+    padding: 35px;
+
+    background: #10162f;
+
+    border: 1px solid #3a477d;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 50px
+        rgba(75, 110, 255, 0.3);
+}
+
+
+.card h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+
+.card p {
+
+    color: #b8c0df;
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   HIDDEN
+========================= */
+
+.hidden {
+
+    display: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .top {
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    h1 {
+
+        font-size: 24px;
+    }
+
+
+    .bottom {
+
+        flex-direction: column;
+    }
+
+
+    .hint {
+
+        font-size: 11px;
+
+        text-align: center;
+    }
+
+}

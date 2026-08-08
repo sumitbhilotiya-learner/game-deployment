@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neon Dodge</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <!-- Header -->
+        <div class="top">
+
+            <h1>⚡ NEON DODGE</h1>
+
+            <div class="score-box">
+
+                <div class="score">
+                    Score:
+                    <span id="score">0</span>
+                </div>
+
+                <div class="score">
+                    Best:
+                    <span id="best">0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Game Area -->
+        <canvas id="gameCanvas"
+                width="900"
+                height="500">
+        </canvas>
+
+
+        <!-- Controls -->
+        <div class="bottom">
+
+            <div class="hint">
+                🎮 Move:
+                ← →
+                / A D
+                &nbsp; | &nbsp;
+                ⭐ Collect
+                &nbsp; | &nbsp;
+                🔴 Avoid
+            </div>
+
+            <button id="restartBtn">
+                Restart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Start / Game Over Screen -->
+    <div class="overlay" id="overlay">
+
+        <div class="card">
+
+            <h2 id="gameTitle">
+                ⚡ NEON DODGE
+            </h2>
+
+            <p id="gameMessage">
+                Move your player, collect stars
+                and avoid enemies!
+            </p>
+
+            <button id="startBtn">
+                START GAME
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
